@@ -1,15 +1,19 @@
 #!/usr/bin/env python
 
 import argparse
+import gzip
 import os
 import sys
+
 import numpy as np
+
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description=(
             "Random baseline clustering module for the 'clustering' stage.\n"
-            "Assigns random cluster labels with a fixed random seed."
+            "Assigns random cluster labels with the same number of clusters "
+            "as in --data.true_labels."
         )
     )
 
@@ -17,22 +21,35 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--data.true_labels", dest="data_true_labels", required=True)
     parser.add_argument("--output_dir", required=True)
     parser.add_argument("--name", required=True)
+    parser.add_argument("--seed", type=int, default=42)
 
-    parser.add_argument("--seed", type=int, default=42,
-                        help="Random seed (default: 42)")
     return parser.parse_args()
 
 
+def smart_open(path: str, mode: str = "rt"):
+    if path.endswith(".gz"):
+        return gzip.open(path, mode)
+    return open(path, mode)
+
+
 def load_labels(path: str) -> np.ndarray:
-    arr = np.loadtxt(path)
+    try:
+        with smart_open(path, "rt") as f:
+            arr = np.loadtxt(f)
+    except Exception as e:
+        raise RuntimeError(f"Could not load true labels from {path}: {e}")
+
     if arr.ndim > 1:
         arr = arr[:, 0]
     return arr.astype(int)
 
 
 def count_rows(path: str) -> int:
-    with open(path, "r") as fh:
-        return sum(1 for _ in fh)
+    try:
+        with smart_open(path, "rt") as fh:
+            return sum(1 for _ in fh)
+    except Exception as e:
+        raise RuntimeError(f"Could not read data matrix from {path}: {e}")
 
 
 def main() -> int:
@@ -48,15 +65,21 @@ def main() -> int:
         n_rows_matrix = count_rows(args.data_matrix)
         if n_rows_matrix != n_samples:
             raise RuntimeError(
-                f"Row mismatch: matrix={n_rows_matrix}, labels={n_samples}"
+                f"Row count mismatch between data.matrix ({n_rows_matrix}) "
+                f"and data.true_labels ({n_samples})."
             )
 
         rng = np.random.default_rng(seed=args.seed)
         y_pred = rng.integers(low=0, high=n_clusters, size=n_samples)
 
-        # Renamed output here
-        out_path = os.path.join(args.output_dir, f"{args.name}_JHDC_clusters.txt")
-        np.savetxt(out_path, y_pred, fmt="%d")
+        # 1) main file that Snakemake expects
+        ks_path = os.path.join(args.output_dir, f"{args.name}_ks_range.labels.gz")
+        with gzip.open(ks_path, "wt") as f:
+            np.savetxt(f, y_pred, fmt="%d")
+
+        # 2) your extra JHDC debugging file (optional but keeps your naming)
+        jhdc_path = os.path.join(args.output_dir, f"{args.name}_JHDC_clusters.txt")
+        np.savetxt(jhdc_path, y_pred, fmt="%d")
 
         meta_path = os.path.join(args.output_dir, f"{args.name}_JHDC_meta.txt")
         with open(meta_path, "w") as fh:
@@ -64,7 +87,7 @@ def main() -> int:
             fh.write(f"n_samples: {n_samples}\n")
             fh.write(f"n_clusters: {n_clusters}\n")
 
-        print(f"Wrote random clustering to {out_path}")
+        print(f"Wrote random clustering to {ks_path}")
         return 0
 
     except Exception as e:

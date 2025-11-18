@@ -1,0 +1,2 @@
+id	base_path	alias_path	parameters
+c9ed2d660eb27d1fe3ed30e718fc7161e673f6d86ab8d67406967e4e47dfe4f2	out/data/clustbench/.46bb23e08cfbf0ba58db7fd92e04651ba558adc9a01ad0e7bacebda3866d7821/clustering/fcps/.c9ed2d660eb27d1fe3ed30e718fc7161e673f6d86ab8d67406967e4e47dfe4f2	out/data/clustbench/.46bb23e08cfbf0ba58db7fd92e04651ba558adc9a01ad0e7bacebda3866d7821/clustering/fcps/method-FCPS_Minimax_seed-2	{"method": "FCPS_Minimax", "seed": "2"}

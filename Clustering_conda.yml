@@ -122,7 +122,7 @@ stages:
         software_environment: "random_baseline"
         repository:
           url: https://github.com/JavierHdC/OmniBench_JHdC
-          commit: "01c653681628d594443b57f9164f5b45c18581b1"
+          commit: "524cc460191035024c520726271a5e54c6460920"
         parameters:
           - values: ["--seed", "42"]
           #- values: ["--seed", "1"]

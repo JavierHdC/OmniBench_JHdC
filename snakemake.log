@@ -1,0 +1,232 @@
+2025-11-18 12:13:09 [INFO] None
+2025-11-18 12:13:09 [INFO] host: ubuntu-32gb-nbg1-1
+2025-11-18 12:13:09 [INFO] Building DAG of jobs...
+2025-11-18 12:13:10 [WARNING] Your conda installation is not configured to use strict channel priorities. This is however important for having robust and correct environments (for details, see https://conda-forge.org/docs/user/tipsandtricks.html). Please consider to configure strict priorities by executing 'conda config --set channel_priority strict'.
+2025-11-18 12:13:10 [INFO] Conda environment envs/random_baseline.yml will be created.
+2025-11-18 12:13:10 [INFO] Conda environment envs/fcps.yml will be created.
+2025-11-18 12:13:10 [INFO] Conda environment envs/clustbench.yml will be created.
+2025-11-18 12:13:10 [INFO] Job stats:
+job                                                                                            count
+-------------------------------------------------------------------------------------------  -------
+all                                                                                                1
+clustering_agglomerative_.3bdd6edfc81b99f9734940437d6a9243eb2c6b4808de1fc2f6ce463b1432aab5         2
+clustering_fastcluster_.158d4842ad76420278b5c3b7f9ec2e8c26e6b0cc276b34fbba931cfe2788c947           2
+clustering_fcps_.c9ed2d660eb27d1fe3ed30e718fc7161e673f6d86ab8d67406967e4e47dfe4f2                  2
+clustering_genieclust_.b5ae743ddc9c011d4766d976f3c7e10c617b529dfa06b6d9a776319c8a016f6e            2
+clustering_randombaseline_.661ab50d8524931e7eda594139e01192af9b41f8f2a585bbfd706e106757f746        2
+clustering_sklearn_.f73ae62565a6ecf55364dd149d39df2dbcb3a9adaa6333f200874456f20528a2               2
+data_clustbench_.1f2b8e54c70f89988387ddb3f4c54e7af6fa478514af691527cc9c488cdaca11                  1
+data_clustbench_.46bb23e08cfbf0ba58db7fd92e04651ba558adc9a01ad0e7bacebda3866d7821                  1
+metric_collector_plotting                                                                          1
+metrics_partition_metrics_.1e99f1ac82179362b6fdc9caa9211fb8da6ba463b5e6078ef371eac70f88b788       12
+metrics_partition_metrics_.dab8ec0285c698339308eb016fd5b021aa268af903e83b356c18f6ed076e4d95       12
+total                                                                                             40
+
+2025-11-18 12:13:10 [INFO]  Rule: data_clustbench_.46bb23e08cfbf0ba58db7fd92e04651ba558adc9a01ad0e7bacebda3866d7821, Jobid: 20
+2025-11-18 12:13:10 [INFO] Shell command: None
+2025-11-18 12:13:10 [INFO]  Rule: data_clustbench_.1f2b8e54c70f89988387ddb3f4c54e7af6fa478514af691527cc9c488cdaca11, Jobid: 1
+2025-11-18 12:13:10 [INFO] Shell command: None
+2025-11-18 12:13:10 [INFO]  Rule: clustering_sklearn_.f73ae62565a6ecf55364dd149d39df2dbcb3a9adaa6333f200874456f20528a2, Jobid: 17
+2025-11-18 12:13:10 [INFO] Shell command: None
+2025-11-18 12:13:10 [INFO]  Rule: clustering_fastcluster_.158d4842ad76420278b5c3b7f9ec2e8c26e6b0cc276b34fbba931cfe2788c947, Jobid: 24
+2025-11-18 12:13:10 [INFO] Shell command: None
+2025-11-18 12:13:10 [INFO]  Rule: clustering_agglomerative_.3bdd6edfc81b99f9734940437d6a9243eb2c6b4808de1fc2f6ce463b1432aab5, Jobid: 2
+2025-11-18 12:13:10 [INFO] Shell command: None
+2025-11-18 12:13:10 [INFO]  Rule: clustering_genieclust_.b5ae743ddc9c011d4766d976f3c7e10c617b529dfa06b6d9a776319c8a016f6e, Jobid: 11
+2025-11-18 12:13:10 [INFO] Shell command: None
+2025-11-18 12:13:10 [INFO]  Rule: clustering_randombaseline_.661ab50d8524931e7eda594139e01192af9b41f8f2a585bbfd706e106757f746, Jobid: 33
+2025-11-18 12:13:10 [INFO] Shell command: None
+2025-11-18 12:13:10 [INFO]  Rule: clustering_fcps_.c9ed2d660eb27d1fe3ed30e718fc7161e673f6d86ab8d67406967e4e47dfe4f2, Jobid: 27
+2025-11-18 12:13:10 [INFO] Shell command: None
+2025-11-18 12:13:10 [INFO]  Rule: clustering_randombaseline_.661ab50d8524931e7eda594139e01192af9b41f8f2a585bbfd706e106757f746, Jobid: 14
+2025-11-18 12:13:10 [INFO] Shell command: None
+2025-11-18 12:13:10 [INFO]  Rule: clustering_sklearn_.f73ae62565a6ecf55364dd149d39df2dbcb3a9adaa6333f200874456f20528a2, Jobid: 36
+2025-11-18 12:13:10 [INFO] Shell command: None
+2025-11-18 12:13:10 [INFO]  Rule: clustering_agglomerative_.3bdd6edfc81b99f9734940437d6a9243eb2c6b4808de1fc2f6ce463b1432aab5, Jobid: 21
+2025-11-18 12:13:10 [INFO] Shell command: None
+2025-11-18 12:13:10 [INFO]  Rule: clustering_fastcluster_.158d4842ad76420278b5c3b7f9ec2e8c26e6b0cc276b34fbba931cfe2788c947, Jobid: 5
+2025-11-18 12:13:10 [INFO] Shell command: None
+2025-11-18 12:13:10 [INFO]  Rule: clustering_fcps_.c9ed2d660eb27d1fe3ed30e718fc7161e673f6d86ab8d67406967e4e47dfe4f2, Jobid: 8
+2025-11-18 12:13:10 [INFO] Shell command: None
+2025-11-18 12:13:10 [INFO]  Rule: clustering_genieclust_.b5ae743ddc9c011d4766d976f3c7e10c617b529dfa06b6d9a776319c8a016f6e, Jobid: 30
+2025-11-18 12:13:10 [INFO] Shell command: None
+2025-11-18 12:13:10 [INFO]  Rule: metrics_partition_metrics_.dab8ec0285c698339308eb016fd5b021aa268af903e83b356c18f6ed076e4d95, Jobid: 29
+2025-11-18 12:13:10 [INFO] Shell command: None
+2025-11-18 12:13:10 [INFO]  Rule: metrics_partition_metrics_.1e99f1ac82179362b6fdc9caa9211fb8da6ba463b5e6078ef371eac70f88b788, Jobid: 34
+2025-11-18 12:13:10 [INFO] Shell command: None
+2025-11-18 12:13:10 [INFO]  Rule: metrics_partition_metrics_.1e99f1ac82179362b6fdc9caa9211fb8da6ba463b5e6078ef371eac70f88b788, Jobid: 9
+2025-11-18 12:13:10 [INFO] Shell command: None
+2025-11-18 12:13:10 [INFO]  Rule: metrics_partition_metrics_.dab8ec0285c698339308eb016fd5b021aa268af903e83b356c18f6ed076e4d95, Jobid: 19
+2025-11-18 12:13:10 [INFO] Shell command: None
+2025-11-18 12:13:10 [INFO]  Rule: metrics_partition_metrics_.1e99f1ac82179362b6fdc9caa9211fb8da6ba463b5e6078ef371eac70f88b788, Jobid: 25
+2025-11-18 12:13:10 [INFO] Shell command: None
+2025-11-18 12:13:10 [INFO]  Rule: metrics_partition_metrics_.dab8ec0285c698339308eb016fd5b021aa268af903e83b356c18f6ed076e4d95, Jobid: 35
+2025-11-18 12:13:10 [INFO] Shell command: None
+2025-11-18 12:13:10 [INFO]  Rule: metrics_partition_metrics_.dab8ec0285c698339308eb016fd5b021aa268af903e83b356c18f6ed076e4d95, Jobid: 10
+2025-11-18 12:13:10 [INFO] Shell command: None
+2025-11-18 12:13:10 [INFO]  Rule: metrics_partition_metrics_.1e99f1ac82179362b6fdc9caa9211fb8da6ba463b5e6078ef371eac70f88b788, Jobid: 15
+2025-11-18 12:13:10 [INFO] Shell command: None
+2025-11-18 12:13:10 [INFO]  Rule: metrics_partition_metrics_.1e99f1ac82179362b6fdc9caa9211fb8da6ba463b5e6078ef371eac70f88b788, Jobid: 31
+2025-11-18 12:13:10 [INFO] Shell command: None
+2025-11-18 12:13:10 [INFO]  Rule: metrics_partition_metrics_.dab8ec0285c698339308eb016fd5b021aa268af903e83b356c18f6ed076e4d95, Jobid: 26
+2025-11-18 12:13:10 [INFO] Shell command: None
+2025-11-18 12:13:10 [INFO]  Rule: metrics_partition_metrics_.dab8ec0285c698339308eb016fd5b021aa268af903e83b356c18f6ed076e4d95, Jobid: 16
+2025-11-18 12:13:10 [INFO] Shell command: None
+2025-11-18 12:13:10 [INFO]  Rule: metrics_partition_metrics_.dab8ec0285c698339308eb016fd5b021aa268af903e83b356c18f6ed076e4d95, Jobid: 4
+2025-11-18 12:13:10 [INFO] Shell command: None
+2025-11-18 12:13:10 [INFO]  Rule: metrics_partition_metrics_.dab8ec0285c698339308eb016fd5b021aa268af903e83b356c18f6ed076e4d95, Jobid: 32
+2025-11-18 12:13:10 [INFO] Shell command: None
+2025-11-18 12:13:10 [INFO]  Rule: metrics_partition_metrics_.1e99f1ac82179362b6fdc9caa9211fb8da6ba463b5e6078ef371eac70f88b788, Jobid: 37
+2025-11-18 12:13:10 [INFO] Shell command: None
+2025-11-18 12:13:10 [INFO]  Rule: metrics_partition_metrics_.1e99f1ac82179362b6fdc9caa9211fb8da6ba463b5e6078ef371eac70f88b788, Jobid: 22
+2025-11-18 12:13:10 [INFO] Shell command: None
+2025-11-18 12:13:10 [INFO]  Rule: metrics_partition_metrics_.1e99f1ac82179362b6fdc9caa9211fb8da6ba463b5e6078ef371eac70f88b788, Jobid: 3
+2025-11-18 12:13:10 [INFO] Shell command: None
+2025-11-18 12:13:10 [INFO]  Rule: metrics_partition_metrics_.1e99f1ac82179362b6fdc9caa9211fb8da6ba463b5e6078ef371eac70f88b788, Jobid: 12
+2025-11-18 12:13:10 [INFO] Shell command: None
+2025-11-18 12:13:10 [INFO]  Rule: metrics_partition_metrics_.dab8ec0285c698339308eb016fd5b021aa268af903e83b356c18f6ed076e4d95, Jobid: 7
+2025-11-18 12:13:10 [INFO] Shell command: None
+2025-11-18 12:13:10 [INFO]  Rule: metrics_partition_metrics_.dab8ec0285c698339308eb016fd5b021aa268af903e83b356c18f6ed076e4d95, Jobid: 38
+2025-11-18 12:13:10 [INFO] Shell command: None
+2025-11-18 12:13:10 [INFO]  Rule: metrics_partition_metrics_.dab8ec0285c698339308eb016fd5b021aa268af903e83b356c18f6ed076e4d95, Jobid: 23
+2025-11-18 12:13:10 [INFO] Shell command: None
+2025-11-18 12:13:10 [INFO]  Rule: metrics_partition_metrics_.1e99f1ac82179362b6fdc9caa9211fb8da6ba463b5e6078ef371eac70f88b788, Jobid: 28
+2025-11-18 12:13:10 [INFO] Shell command: None
+2025-11-18 12:13:10 [INFO]  Rule: metrics_partition_metrics_.1e99f1ac82179362b6fdc9caa9211fb8da6ba463b5e6078ef371eac70f88b788, Jobid: 6
+2025-11-18 12:13:10 [INFO] Shell command: None
+2025-11-18 12:13:10 [INFO]  Rule: metrics_partition_metrics_.1e99f1ac82179362b6fdc9caa9211fb8da6ba463b5e6078ef371eac70f88b788, Jobid: 18
+2025-11-18 12:13:10 [INFO] Shell command: None
+2025-11-18 12:13:10 [INFO]  Rule: metrics_partition_metrics_.dab8ec0285c698339308eb016fd5b021aa268af903e83b356c18f6ed076e4d95, Jobid: 13
+2025-11-18 12:13:10 [INFO] Shell command: None
+2025-11-18 12:13:10 [INFO]  Rule: metric_collector_plotting, Jobid: 39
+2025-11-18 12:13:10 [INFO] Shell command: None
+2025-11-18 12:13:10 [INFO]  Rule: all, Jobid: 0
+2025-11-18 12:13:10 [INFO] Shell command: None
+2025-11-18 12:13:10 [INFO] Job stats:
+job                                                                                            count
+-------------------------------------------------------------------------------------------  -------
+all                                                                                                1
+clustering_agglomerative_.3bdd6edfc81b99f9734940437d6a9243eb2c6b4808de1fc2f6ce463b1432aab5         2
+clustering_fastcluster_.158d4842ad76420278b5c3b7f9ec2e8c26e6b0cc276b34fbba931cfe2788c947           2
+clustering_fcps_.c9ed2d660eb27d1fe3ed30e718fc7161e673f6d86ab8d67406967e4e47dfe4f2                  2
+clustering_genieclust_.b5ae743ddc9c011d4766d976f3c7e10c617b529dfa06b6d9a776319c8a016f6e            2
+clustering_randombaseline_.661ab50d8524931e7eda594139e01192af9b41f8f2a585bbfd706e106757f746        2
+clustering_sklearn_.f73ae62565a6ecf55364dd149d39df2dbcb3a9adaa6333f200874456f20528a2               2
+data_clustbench_.1f2b8e54c70f89988387ddb3f4c54e7af6fa478514af691527cc9c488cdaca11                  1
+data_clustbench_.46bb23e08cfbf0ba58db7fd92e04651ba558adc9a01ad0e7bacebda3866d7821                  1
+metric_collector_plotting                                                                          1
+metrics_partition_metrics_.1e99f1ac82179362b6fdc9caa9211fb8da6ba463b5e6078ef371eac70f88b788       12
+metrics_partition_metrics_.dab8ec0285c698339308eb016fd5b021aa268af903e83b356c18f6ed076e4d95       12
+total                                                                                             40
+
+2025-11-18 12:13:10 [INFO] Reasons:
+    (check individual jobs above for details)
+    input files updated by another job:
+        all, clustering_agglomerative_.3bdd6edfc81b99f9734940437d6a9243eb2c6b4808de1fc2f6ce463b1432aab5, clustering_fastcluster_.158d4842ad76420278b5c3b7f9ec2e8c26e6b0cc276b34fbba931cfe2788c947, clustering_fcps_.c9ed2d660eb27d1fe3ed30e718fc7161e673f6d86ab8d67406967e4e47dfe4f2, clustering_genieclust_.b5ae743ddc9c011d4766d976f3c7e10c617b529dfa06b6d9a776319c8a016f6e, clustering_randombaseline_.661ab50d8524931e7eda594139e01192af9b41f8f2a585bbfd706e106757f746, clustering_sklearn_.f73ae62565a6ecf55364dd149d39df2dbcb3a9adaa6333f200874456f20528a2, metric_collector_plotting, metrics_partition_metrics_.1e99f1ac82179362b6fdc9caa9211fb8da6ba463b5e6078ef371eac70f88b788, metrics_partition_metrics_.dab8ec0285c698339308eb016fd5b021aa268af903e83b356c18f6ed076e4d95
+    output files have to be generated:
+        all, clustering_agglomerative_.3bdd6edfc81b99f9734940437d6a9243eb2c6b4808de1fc2f6ce463b1432aab5, clustering_fastcluster_.158d4842ad76420278b5c3b7f9ec2e8c26e6b0cc276b34fbba931cfe2788c947, clustering_fcps_.c9ed2d660eb27d1fe3ed30e718fc7161e673f6d86ab8d67406967e4e47dfe4f2, clustering_genieclust_.b5ae743ddc9c011d4766d976f3c7e10c617b529dfa06b6d9a776319c8a016f6e, clustering_randombaseline_.661ab50d8524931e7eda594139e01192af9b41f8f2a585bbfd706e106757f746, clustering_sklearn_.f73ae62565a6ecf55364dd149d39df2dbcb3a9adaa6333f200874456f20528a2, data_clustbench_.1f2b8e54c70f89988387ddb3f4c54e7af6fa478514af691527cc9c488cdaca11, data_clustbench_.46bb23e08cfbf0ba58db7fd92e04651ba558adc9a01ad0e7bacebda3866d7821, metric_collector_plotting, metrics_partition_metrics_.1e99f1ac82179362b6fdc9caa9211fb8da6ba463b5e6078ef371eac70f88b788, metrics_partition_metrics_.dab8ec0285c698339308eb016fd5b021aa268af903e83b356c18f6ed076e4d95
+2025-11-18 12:13:10 [INFO] This was a dry-run (flag -n). The order of jobs does not reflect the order of execution.
+2025-11-18 12:13:10 [INFO] Benchmark run has finished successfully.
+2025-11-18 12:13:22 [INFO] Assuming unrestricted shared filesystem usage.
+2025-11-18 12:13:22 [INFO] None
+2025-11-18 12:13:22 [INFO] host: ubuntu-32gb-nbg1-1
+2025-11-18 12:13:22 [INFO] Building DAG of jobs...
+2025-11-18 12:13:23 [WARNING] Your conda installation is not configured to use strict channel priorities. This is however important for having robust and correct environments (for details, see https://conda-forge.org/docs/user/tipsandtricks.html). Please consider to configure strict priorities by executing 'conda config --set channel_priority strict'.
+2025-11-18 12:13:23 [INFO] Creating conda environment envs/clustbench.yml...
+2025-11-18 12:13:23 [INFO] Downloading and installing remote packages.
+2025-11-18 12:13:47 [INFO] Cleaning up conda package tarballs.
+2025-11-18 12:13:48 [INFO] Environment for /home/javier/benchmarks/OmniBench_JHdC/envs/clustbench.yml created (location: .snakemake/conda/75ac6e9f05e4fba7db68d63f0eb1414d_)
+2025-11-18 12:13:48 [INFO] Creating conda environment envs/fcps.yml...
+2025-11-18 12:13:48 [INFO] Downloading and installing remote packages.
+2025-11-18 12:14:01 [INFO] Cleaning up conda package tarballs.
+2025-11-18 12:14:02 [INFO] Environment for /home/javier/benchmarks/OmniBench_JHdC/envs/fcps.yml created (location: .snakemake/conda/8cacf671d75191f3e5377d3d039d943c_)
+2025-11-18 12:14:02 [INFO] Creating conda environment envs/random_baseline.yml...
+2025-11-18 12:14:02 [INFO] Downloading and installing remote packages.
+2025-11-18 12:14:10 [INFO] Cleaning up conda package tarballs.
+2025-11-18 12:14:11 [INFO] Environment for /home/javier/benchmarks/OmniBench_JHdC/envs/random_baseline.yml created (location: .snakemake/conda/8fa2a3ae7a350b8206982a63255bbef3_)
+2025-11-18 12:14:11 [INFO] Using shell: /usr/bin/bash
+2025-11-18 12:14:11 [INFO] Provided cores: 1 (use --cores to define parallelism)
+2025-11-18 12:14:11 [INFO] Rules claiming more threads will be scaled down.
+2025-11-18 12:14:11 [INFO] Job stats:
+job                                                                                            count
+-------------------------------------------------------------------------------------------  -------
+all                                                                                                1
+clustering_agglomerative_.3bdd6edfc81b99f9734940437d6a9243eb2c6b4808de1fc2f6ce463b1432aab5         2
+clustering_fastcluster_.158d4842ad76420278b5c3b7f9ec2e8c26e6b0cc276b34fbba931cfe2788c947           2
+clustering_fcps_.c9ed2d660eb27d1fe3ed30e718fc7161e673f6d86ab8d67406967e4e47dfe4f2                  2
+clustering_genieclust_.b5ae743ddc9c011d4766d976f3c7e10c617b529dfa06b6d9a776319c8a016f6e            2
+clustering_randombaseline_.661ab50d8524931e7eda594139e01192af9b41f8f2a585bbfd706e106757f746        2
+clustering_sklearn_.f73ae62565a6ecf55364dd149d39df2dbcb3a9adaa6333f200874456f20528a2               2
+data_clustbench_.1f2b8e54c70f89988387ddb3f4c54e7af6fa478514af691527cc9c488cdaca11                  1
+data_clustbench_.46bb23e08cfbf0ba58db7fd92e04651ba558adc9a01ad0e7bacebda3866d7821                  1
+metric_collector_plotting                                                                          1
+metrics_partition_metrics_.1e99f1ac82179362b6fdc9caa9211fb8da6ba463b5e6078ef371eac70f88b788       12
+metrics_partition_metrics_.dab8ec0285c698339308eb016fd5b021aa268af903e83b356c18f6ed076e4d95       12
+total                                                                                             40
+
+2025-11-18 12:14:11 [INFO] Select jobs to execute...
+2025-11-18 12:14:11 [INFO] Execute 1 jobs...
+2025-11-18 12:14:11 [INFO]  Rule: data_clustbench_.46bb23e08cfbf0ba58db7fd92e04651ba558adc9a01ad0e7bacebda3866d7821, Jobid: 20
+2025-11-18 12:14:11 [INFO] Shell command: None
+2025-11-18 12:14:11 [INFO] Activating conda environment: .snakemake/conda/75ac6e9f05e4fba7db68d63f0eb1414d_
+2025-11-18 12:14:11 [INFO] Activating conda environment: .snakemake/conda/75ac6e9f05e4fba7db68d63f0eb1414d_
+2025-11-18 12:14:12 [INFO] Select jobs to execute...
+2025-11-18 12:14:14 [INFO] Finished jobid: 20 (Rule: data_clustbench_.46bb23e08cfbf0ba58db7fd92e04651ba558adc9a01ad0e7bacebda3866d7821)
+2025-11-18 12:14:14 [INFO] None
+2025-11-18 12:14:14 [INFO] Execute 1 jobs...
+2025-11-18 12:14:14 [INFO]  Rule: clustering_agglomerative_.3bdd6edfc81b99f9734940437d6a9243eb2c6b4808de1fc2f6ce463b1432aab5, Jobid: 21
+2025-11-18 12:14:14 [INFO] Shell command: None
+2025-11-18 12:14:14 [INFO] Activating conda environment: .snakemake/conda/75ac6e9f05e4fba7db68d63f0eb1414d_
+2025-11-18 12:14:14 [INFO] Select jobs to execute...
+2025-11-18 12:14:14 [INFO] Activating conda environment: .snakemake/conda/75ac6e9f05e4fba7db68d63f0eb1414d_
+2025-11-18 12:14:16 [INFO] Finished jobid: 21 (Rule: clustering_agglomerative_.3bdd6edfc81b99f9734940437d6a9243eb2c6b4808de1fc2f6ce463b1432aab5)
+2025-11-18 12:14:16 [INFO] None
+2025-11-18 12:14:16 [INFO] Execute 1 jobs...
+2025-11-18 12:14:16 [INFO]  Rule: clustering_sklearn_.f73ae62565a6ecf55364dd149d39df2dbcb3a9adaa6333f200874456f20528a2, Jobid: 36
+2025-11-18 12:14:16 [INFO] Shell command: None
+2025-11-18 12:14:16 [INFO] Activating conda environment: .snakemake/conda/75ac6e9f05e4fba7db68d63f0eb1414d_
+2025-11-18 12:14:17 [INFO] Select jobs to execute...
+2025-11-18 12:14:17 [INFO] Activating conda environment: .snakemake/conda/75ac6e9f05e4fba7db68d63f0eb1414d_
+2025-11-18 12:14:23 [INFO] Finished jobid: 36 (Rule: clustering_sklearn_.f73ae62565a6ecf55364dd149d39df2dbcb3a9adaa6333f200874456f20528a2)
+2025-11-18 12:14:23 [INFO] None
+2025-11-18 12:14:23 [INFO] Execute 1 jobs...
+2025-11-18 12:14:23 [INFO]  Rule: clustering_fcps_.c9ed2d660eb27d1fe3ed30e718fc7161e673f6d86ab8d67406967e4e47dfe4f2, Jobid: 27
+2025-11-18 12:14:23 [INFO] Shell command: None
+2025-11-18 12:14:23 [INFO] Activating conda environment: .snakemake/conda/8cacf671d75191f3e5377d3d039d943c_
+2025-11-18 12:14:23 [INFO] Activating conda environment: .snakemake/conda/8cacf671d75191f3e5377d3d039d943c_
+2025-11-18 12:14:23 [INFO] Select jobs to execute...
+2025-11-18 12:14:27 [INFO] Finished jobid: 27 (Rule: clustering_fcps_.c9ed2d660eb27d1fe3ed30e718fc7161e673f6d86ab8d67406967e4e47dfe4f2)
+2025-11-18 12:14:27 [INFO] None
+2025-11-18 12:14:27 [INFO] Execute 1 jobs...
+2025-11-18 12:14:27 [INFO]  Rule: metrics_partition_metrics_.1e99f1ac82179362b6fdc9caa9211fb8da6ba463b5e6078ef371eac70f88b788, Jobid: 22
+2025-11-18 12:14:27 [INFO] Shell command: None
+2025-11-18 12:14:27 [INFO] Activating conda environment: .snakemake/conda/75ac6e9f05e4fba7db68d63f0eb1414d_
+2025-11-18 12:14:27 [INFO] Select jobs to execute...
+2025-11-18 12:14:27 [INFO] Activating conda environment: .snakemake/conda/75ac6e9f05e4fba7db68d63f0eb1414d_
+2025-11-18 12:14:30 [INFO] Finished jobid: 22 (Rule: metrics_partition_metrics_.1e99f1ac82179362b6fdc9caa9211fb8da6ba463b5e6078ef371eac70f88b788)
+2025-11-18 12:14:30 [INFO] None
+2025-11-18 12:14:30 [INFO] Execute 1 jobs...
+2025-11-18 12:14:30 [INFO]  Rule: metrics_partition_metrics_.1e99f1ac82179362b6fdc9caa9211fb8da6ba463b5e6078ef371eac70f88b788, Jobid: 37
+2025-11-18 12:14:30 [INFO] Shell command: None
+2025-11-18 12:14:30 [INFO] Activating conda environment: .snakemake/conda/75ac6e9f05e4fba7db68d63f0eb1414d_
+2025-11-18 12:14:30 [INFO] Select jobs to execute...
+2025-11-18 12:14:30 [INFO] Activating conda environment: .snakemake/conda/75ac6e9f05e4fba7db68d63f0eb1414d_
+2025-11-18 12:14:32 [INFO] Finished jobid: 37 (Rule: metrics_partition_metrics_.1e99f1ac82179362b6fdc9caa9211fb8da6ba463b5e6078ef371eac70f88b788)
+2025-11-18 12:14:32 [INFO] None
+2025-11-18 12:14:32 [INFO] Execute 1 jobs...
+2025-11-18 12:14:32 [INFO]  Rule: clustering_randombaseline_.661ab50d8524931e7eda594139e01192af9b41f8f2a585bbfd706e106757f746, Jobid: 33
+2025-11-18 12:14:32 [INFO] Shell command: None
+2025-11-18 12:14:32 [INFO] Activating conda environment: .snakemake/conda/8fa2a3ae7a350b8206982a63255bbef3_
+2025-11-18 12:14:32 [INFO] Select jobs to execute...
+2025-11-18 12:14:33 [INFO] Activating conda environment: .snakemake/conda/8fa2a3ae7a350b8206982a63255bbef3_
+2025-11-18 12:14:34 [ERROR] RuleException:
+CalledProcessError in file "/home/javier/miniforge3/envs/omnibenchmark/lib/python3.12/site-packages/omnibenchmark/workflow/snakemake/rules/rule_node.smk", line 186:
+Command 'source /home/javier/miniforge3/bin/activate '/home/javier/benchmarks/OmniBench_JHdC/.snakemake/conda/8fa2a3ae7a350b8206982a63255bbef3_'; set -euo pipefail;  python /home/javier/benchmarks/OmniBench_JHdC/.snakemake/scripts/tmpor5dtjf5.run_module.py' returned non-zero exit status 1.
+2025-11-18 12:14:34 [ERROR] Error in rule clustering_randombaseline_.661ab50d8524931e7eda594139e01192af9b41f8f2a585bbfd706e106757f746, jobid: 33
+2025-11-18 12:14:34 [INFO] Shutting down, this might take some time.
+2025-11-18 12:14:34 [ERROR] Exiting because a job execution failed. Look below for error messages
+2025-11-18 12:14:34 [ERROR] Error in rule clustering_randombaseline_.661ab50d8524931e7eda594139e01192af9b41f8f2a585bbfd706e106757f746, jobid: 33
+2025-11-18 12:14:34 [INFO] Complete log(s): /home/javier/benchmarks/OmniBench_JHdC/.snakemake/log/2025-11-18T121322.704297.snakemake.log
+2025-11-18 12:14:34 [ERROR] WorkflowError:
+At least one job did not complete successfully.
+2025-11-18 12:14:34 [ERROR] Benchmark run has failed.
